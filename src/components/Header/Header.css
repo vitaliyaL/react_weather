@@ -1,6 +1,27 @@
 .header{
     display: flex;
+    margin-bottom: 15px;
+    width: 1160px;
+    
+}
+.logo{
+    font-size: 23px;
+    display: flex;
+    width: 50%;
+    font-family: monospace;
+    margin: 0;
 }
 .data{
-    width: 87%;
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+}
+.data input{
+    background-color: cornsilk;
+    border: 0.5px solid rgb(81, 175, 218);
+    border-radius: 15px;
+}
+.logo p{
+    padding: 7px 0;
+    margin: 0;
 }

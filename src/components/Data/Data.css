@@ -1,24 +1,26 @@
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color:rgba(255, 255, 255, 0.621);
     border-radius: 15px;
     align-items: center;
-    padding: 30px 5px;
-    margin: 35px 100px;
+    padding: 1rem 2rem;
+    margin: 0rem 3rem 5rem 3rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .item{
-    width: 12%;
-    height: 180px;
+    width: 10rem;
+    margin-bottom: 1rem;
 }
 .date{
     color: gray;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 .weekDay{
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
     text-align: left;
 }
 .descTxt{
@@ -30,24 +32,52 @@
     font-size: 60px;
     font-weight: 900;
     text-align: center;
-    color: cornsilk;
     -webkit-text-stroke: .02em rgb(0, 0, 0);
 }
-.today_left,.today_right,.item{
-    border: 1px solid black;
-    background-color: cornsilk;
+.today_left,.today_right,.item,.little_item{
+    border: 0.01px solid rgba(244, 223, 103, 0);
     border-radius: 15px;
-    padding: 10px;
+    padding:1rem 2rem;
+    margin-bottom: 0.5rem;
+}
+.little_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 10rem 0rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.little_item{
+    width: 6rem;
+    margin-bottom: 1rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.little_item img{
+    margin-left: 20px;
 }
 .today_left{
-    width: 20%;
+    width: 25rem;
 }
 .today_right{
-    width: 50%;
+    width: 100%;
+    background-image: url("../../../public/assets/cloud.png");
+    background-position: -100% 110%;
+    background-size:900px;
+    background-repeat: no-repeat;
 }
+.try{
+   width: 40rem;
+   border-radius: 18px;
+}
+
 .temp_icon{
     display: flex;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 .today_temp{
 margin: 8px 0px;
@@ -61,14 +91,13 @@ margin: 8px 0px;
 
 .today{ 
     display: flex;
+    flex-wrap: wrap;
 }
 .right_icon{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 4px 2px 5px rgb(97, 216, 237);
-    margin: 5px;
-    margin-left: 15px;
-    height: 60px;
+    box-shadow: 4px 2px 5px rgb(96, 109, 111);
+    margin:0 15px 0 0;
  
 }
 .right_icon img{
@@ -76,15 +105,22 @@ margin: 8px 0px;
     width: 60px;
 }
 .left_icon img{
-    width: 100px;
-    margin-left: 35px;
+    width: 80px;
+    margin-left: 155px;
 }
 .lines{
     display: flex;
+    margin: 1.5rem;
 }
 .lines span{
-    color: gray;
     font-family: monospace;
+    font-size: 1.2rem;
+    margin: 0.3rem 0.6rem;
+}
+.lines p{
+    width: 50%;
+    margin-right: 40px;
+    margin-top: 5px;
 }
 .temp_span{
     font-size: 12px;
@@ -94,7 +130,7 @@ margin: 8px 0px;
     display: flex;
 }
 .time_city{
-    color: gray;
+    margin-top: 15px;
     font-size: 20px;
 }
 .descImg {
@@ -104,4 +140,44 @@ margin: 8px 0px;
 }
 .descImg img{
     width: 100%;
+}
+.time_and_gauge{
+    display: flex;
+}
+.select p{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+.select{
+    text-align: right;
+    margin:0 30px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.thermometr{
+    margin-left: 2.8rem;
+}
+@media (max-width: 1108px) {
+    .weekDay{
+        font-size: 0.8rem;
+    }
+    .descTxt{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 821px) {
+    .item,.little_item{
+    padding: 1rem;
+    }
+    .today_left,.today_right{
+        padding: 1rem;
+    }
+    .little_container{
+        margin: 2rem 5rem 0rem;
+    }
+    .try{
+        width: 21rem;
+    }
 }

@@ -3,7 +3,7 @@ import Input from "../Input/Input";
 import "./Header.css";
 import Citata from "../Citata/Citata";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
-function Header({ getValinApp }) {
+function Header({ getValinApp, themeToggle }) {
   const [num, setNum] = useState(Math.round(Math.random() * 3));
   const generation = () => {
     setNum(Math.round(Math.random() * 3));
@@ -20,7 +20,7 @@ function Header({ getValinApp }) {
           <p>REACT|WEATHER</p>
         </div>
         <div className="data">
-          <Input getVal={getVal} generation={generation} />
+          <Input getVal={getVal} generation={generation} themeToggle={themeToggle} />
         </div>
       </div>
       <Citata num={num} />

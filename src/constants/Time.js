@@ -1,4 +1,4 @@
-export const time_arr={
+export const time_obj={
     '00':'00:00',
     '01':'00:00',
     '02':'03:00',

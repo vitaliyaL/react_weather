@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from "react";
+import "./Citata.css";
+import { cit } from "../../constants/Citaty";
 
-export default class Citata extends Component {
-  render() {
-    return (
-      <div>Citata</div>
-    )
-  }
+function Citata({ num }) {
+  return (
+    <div >
+      <hr />
+      <div className="citata">{cit[num]}</div>
+      <hr />
+    </div>
+  );
 }
+
+export default Citata;

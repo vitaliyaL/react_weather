@@ -1,40 +1,183 @@
 .container{
+    border-radius: 15px;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0rem 3rem 5rem 3rem;
+}
+.cards{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .item{
-    border: 1px solid black;
-    background-color: cornsilk;
-    border-radius: 15px;
-    padding: 10px;
-    width: 18%;
+    width: 10rem;
+    margin-bottom: 1rem;
 }
 .date{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: rgb(133, 236, 254);
-    -webkit-text-stroke: .02em rgb(0, 0, 0);
+    color: gray;
+    font-size: 0.9rem;
 }
 .weekDay{
     text-align: center;
-    font-size: 20px;
-}
-.desc{
-    display: flex;
-    font-size: 18px;
-    font-weight: 800;
-    font-style: italic;
-    justify-content: space-between;
-}
-.descImg{
-    width: 40%;
-    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    text-align: left;
 }
 .descTxt{
+    color: gray;
+    font-family: monospace;
+}
+.city{
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: .02em rgb(0, 0, 0);
+}
+.today_left,.today_right,.item,.little_item{
+    border: 0.01px solid rgba(244, 223, 103, 0);
+    border-radius: 15px;
+    padding:1rem 2rem;
+    margin-bottom: 0.5rem;
+}
+.little_container{
     display: flex;
-    align-items: center;
-    width: 60%;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 10rem 0rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.little_item{
+    width: 6rem;
+    margin-bottom: 1rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.little_item img{
+    margin-left: 20px;
+}
+.today_left{
+    width: 25rem;
+}
+.today_right{
+    width: 100%;
+    background-image: url("../../../public/assets/cloud.png");
+    background-position: -100% 110%;
+    background-size:900px;
+    background-repeat: no-repeat;
+}
+.try{
+   width: 40rem;
+   border-radius: 18px;
+}
+
+.temp_icon{
+    display: flex;
+    font-size: 2.5rem;
+}
+.today_temp{
+margin: 8px 0px;
+ text-align: left;
+}
+.today_temp p{
+ font-size: 45px;
+ color: rgb(133, 236, 254);
+    -webkit-text-stroke: .02em rgb(0, 0, 0);
+}
+
+.today{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.right_icon{
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 2px 5px rgb(96, 109, 111);
+    margin:0 15px 0 0;
+ 
+}
+.right_icon img{
+    text-align: center;
+    width: 60px;
+}
+.left_icon img{
+    width: 80px;
+    margin-left: 155px;
+}
+.lines{
+    display: flex;
+    margin: 1.5rem;
+}
+.lines span{
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 0.3rem 0.6rem;
+}
+.lines p{
+    width: 50%;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+.temp_span{
+    font-size: 12px;
+    color: gray;
+}
+.time{
+    display: flex;
+}
+.time_city{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.descImg {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+.descImg img{
+    width: 100%;
+}
+.time_and_gauge{
+    display: flex;
+}
+.select p{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+.select{
+    text-align: right;
+    margin:0 30px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.thermometr{
+    margin-left: 2.8rem;
+}
+@media (max-width: 1108px) {
+    .weekDay{
+        font-size: 0.8rem;
+    }
+    .descTxt{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 821px) {
+    .item,.little_item{
+    padding: 1rem;
+    }
+    .today_left,.today_right{
+        padding: 1rem;
+    }
+    .little_container{
+        margin: 2rem 5rem 0rem;
+    }
+    .try{
+        width: 21rem;
+    }
 }

@@ -1,0 +1,16 @@
+.btn{
+    background-color: cornsilk;
+    border: 0.001px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    margin: 0;
+}
+.input{
+    display: flex;
+    justify-content: right;
+}
+.input p{
+    margin: 0.2rem;
+}
+.change_theme{
+    margin: 0 0.1rem 0.2rem;
+}

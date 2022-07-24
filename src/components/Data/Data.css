@@ -62,13 +62,17 @@
 }
 .today_left{
     width: 25rem;
+    height: 100%;
+    margin-bottom: 0;
 }
 .today_right{
+    height: 100%;
     width: 100%;
     background-image: url("../../../public/assets/cloud.png");
     background-position: -100% 110%;
     background-size:900px;
     background-repeat: no-repeat;
+    padding-bottom: 0;
 }
 .try{
    width: 40rem;

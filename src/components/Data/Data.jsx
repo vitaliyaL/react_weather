@@ -17,13 +17,11 @@ import { Rings, Watch } from "react-loader-spinner";
 
 function Data({ value }) {
   const [time, setTime] = useState("00:00");
-
   const dispatch = useDispatch();
   const { weather, error, loading } = useSelector((state) => state.weather);
   useEffect(() => {
     dispatch(actionWeather.getWeather(value));
   }, [value]);
-  console.log(weather);
   const getWeekDay = (date) => {
     if (date.toString() === moment().startOf("day")._d.toString())
       return "Сегодня";

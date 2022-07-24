@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Citata.css";
+import "./Quote.css";
 import { cit } from "../../constants/Citaty";
 
 function Citata({ num }) {

@@ -6,7 +6,6 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styled-components/GlobalStyles";
 import { darkTheme, lightTheme } from "./styled-components/Theme";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import ContrastIcon from "@mui/icons-material/Contrast";
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -38,10 +37,6 @@ export default class App extends Component {
     const theme = this.state.isChange !== "dark" ? lightTheme : darkTheme;
     return (
       <div className='weather'>
-        {/* <ContrastIcon
-          onClick={this.themeToggle}
-          className='change_theme'
-        /> */}
         <ThemeProvider theme={theme}>
           <GlobalStyles />
           <Header getValinApp={this.getValinApp} themeToggle={this.themeToggle}/>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "../Input/Input";
 import "./Header.css";
-import Quote from "../Quote/Quote";
+import Quotes from "../Quotes/Quotes";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 function Header({ getValinApp, themeToggle }) {
   const [num, setNum] = useState(Math.round(Math.random() * 3));
@@ -23,7 +23,7 @@ function Header({ getValinApp, themeToggle }) {
           <Input getVal={getVal} generation={generation} themeToggle={themeToggle} />
         </div>
       </div>
-      <Quote num={num} />
+      <Quotes num={num} />
     </>
   );
 }
